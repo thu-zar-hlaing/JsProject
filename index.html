@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brain Game Website</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <style>
+      
+
+
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        .home {
+         
+            height: 720px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            position: relative;
+            overflow: hidden; /* Ensures animations stay within the defined height */
+            background-color: #f9f9f9; /* Background color for the home section */
+        }
+
+        h1{
+          font-size: 4rem;
+          color: #7843E6;
+          text-shadow: 1px 1px 1px #FE00FF,
+              1px 2px 1px #FE00FF,
+              1px 3px 1px #FE00FF,
+              1px 4px 1px #FE00FF,
+              1px 5px 1px #FE00FF,
+              1px 6px 1px #FE00FF,
+              1px 7px 1px #FE00FF,
+              1px 8px 1px #FE00FF,
+              1px 9px 1px #FE00FF,
+              1px 10px 1px #FE00FF,
+          1px 18px 6px rgba(16,16,16,0.4),
+          1px 22px 10px rgba(16,16,16,0.2),
+          1px 25px 35px rgba(16,16,16,0.2),
+          1px 30px 60px rgba(16,16,16,0.4);
+        }
+        P{
+          position: inherit;
+          margin-top: 5rem;
+        }
+       
+
+        #title, #photo {
+            opacity: 0;
+            transform: translateY(-50px);
+            transition: opacity 1s ease-in-out, transform 1s ease-in-out;
+        }
+
+        #photo {
+            margin-top: 5rem; /* Adjust spacing as needed */
+        }
+
+        .navbar {
+          height: 80px;
+          position: fixed;
+          width: 100%;
+          z-index: 1000; /* Ensure a high z-index to keep navbar on top */
+            
+            
+        }
+
+        .nav-link {
+            font-size: 25px;
+            color: #7943E6;
+        }
+
+        .navbar-brand {
+            font-size: 30px;
+            color: #7943E6;
+        }
+
+        #games {
+            margin-top: 50px;
+        }
+
+        .card-img-top {
+            width: 100%;
+            height: auto;
+            margin-top: 3rem;
+        }
+
+        
+        #aboutus{
+          background-image: url(/assets/bgfinal.PNG);
+          background-repeat: no-repeat;
+          background-size: cover;
+          height: 900px;
+          
+        }
+        #aboutb{
+          width: 100%;
+          margin: 0;
+        }
+        span{
+          font-weight: bold;
+          font-size: 1.1rem;
+        }
+        .btn{
+            background-color: black;
+            color: white;
+            margin-top: 0px;
+        }
+        .btn:hover{
+          margin-top: 0px;
+          background-color: #C5B4E2;
+          color: black;
+        }
+        #lastrow{
+            margin-left: 200px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-xxl navbar-transparent bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">FPG</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-center" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    <a class="nav-link" href="#aboutb">About</a>
+                    <a class="nav-link" href="#games">Games</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Home Section -->
+    <div class="home">
+        <div id="title">
+            <h1>Fun Puzzle <br>Games</h1>
+            <p>"အတွေးအခေါ်များကို တိုးတက်အောင်၊ ပဟေဠိများဖြင့် ရင်းနှီးဖို့ လှုပ်ရှားကြပါစို့"<br>
+              Let’s engage with puzzles to advance our thinking.</p>
+        </div>
+        <div id="photo">
+            <img src="/assets/giphy.gif" alt="Game Image" class="card-img-top">
+        </div>
+    </div>
+
+    <!-- About Section (Placeholder) -->
+    <div class="" id="aboutb">
+        <div class="row" id="aboutus">
+            <div class="col">
+                <h2>About Us</h2>
+            </div>
+        </div>
+    </div>
+
+    <!-- Games Section -->
+    <div class="container text-center" id="games">
+        <h2>Games</h2>
+        <div class="row justify-content-center">
+            <div class="card  m-2" style="width: 20rem;height: auto;">
+                <img src="/assets/tic-tac-toe(1).png" class="card-img-top" alt="Tic Tac Toe">
+                <div class="card-body">
+                    <h3 class="card-title">Tic Tac Toe</h3>
+                    <p class="card-text" style="margin-top: 0px;"><span>ကစားနည်းနှင့် စည်းမျဉ်းမျာ:</span><br>
+                      <ul style="text-align: start;">
+                        <li>တစ်ဦးသည် "X" ဖြင့် ကစားရမည်။ နောက်တစ်ဦးသည် "O" ဖြင့် ကစားရမည်။</li>
+                        <li>တန်းတစ်တန်းလုံးတွင် တစ်ဦး (အတန်း၊ အစင်း၊ ထောင့်ဖြတ်) တန်းစီဖြည့်နိုင်ပါက အနိုင်ရသည်။</li>
+                      </ul>
+                    </p>
+                    <a href="https://thu-zar-hlaing.github.io/tictactoe/" class="btn" style="margin-top: -3rem;">Play Now</a>
+                </div>
+            </div>
+
+            <div class="card   m-2" style="width: 20rem;height: auto;">
+              <img src="/assets/flag.png" class="card-img-top" alt="drag and drop">
+              <div class="card-body">
+                  <h3 class="card-title">Drag and Drop</h3>
+                  <p class="card-text" style="margin-top: 0px;"><span>ကစားနည်းနှင့် စည်းမျဉ်းမျာ:</span><br>
+                    <ul style="text-align: start;">
+                      <li>ကစားသူသည် mouseကိုအသုံးပြု၍ မိမိနှစ်သက်သောပုံကို မှန်ကန်သောနေရာသို့ဆွဲကြရမည်။</li>
+                      <li>မှားယွင်းသောနေရာသို့ဆွဲချခွင့်ပြုမည်မဟုတ်ပါ။</li>
+                    </ul>
+                  </p>
+                  <a href="https://thu-zar-hlaing.github.io/Drag-Draw/" class="btn" style="margin-top: -1rem;">Play Now</a>
+              </div>
+          </div>
+
+          <div class="card  m-2" style="width: 20rem;">
+            <img src="/assets/pngegg.png" class="card-img-top" alt="kdrama">
+            <div class="card-body">
+                <h5 class="card-title">K_Drama Quiz</h5>
+                <p class="card-text" style="margin-top: 0px;"><span>ကစားနည်းနှင့် စည်းမျဉ်းမျာ:</span><br>
+                  <ul style="text-align: start;">
+                    <li>
+                      K-Drama quizတွင်ဇာတ်လမ်းတွဲအမည်၊ သရုပ်ဆောင်များ၊ဇာတ်ကောင်များ စသည်တို့ကိုမေးမြန်းထားပါသည်။ </li>
+                      <li> မေးခွန်းအောက်တွင် ပေးထားသောပုံများကိုအသုံးပြု၍  K-Drama quiz များကိုဖြေဆိုနိုင်ပါသည်။</li>
+                      
+                  </ul>                      
+                  <a href="https://thu-zar-hlaing.github.io/kDramaQuiz/" class="btn" style="margin-top: 0.6rem;">Play Now</a>
+            </div>
+        </div>
+
+          
+        </div>
+            <div class="row justify-content-center">
+              <div class="card  m-2" style="width: 20rem;">
+                  <img src="/assets/search.png" class="card-img-top" alt="Tic Tac Toe">
+                  <div class="card-body">
+                      <h3 class="card-title">Word Scamble</h3>
+                      <p class="card-text" style="margin-top: 0px;"><span>ကစားနည်းနှင့် စည်းမျဉ်းမျာ:</span><br>
+                      <ul style="text-align: start;">
+                        <li>အထက်တွင်ပေးထားသောအဂ်လိပ်အက္ခရာစာလုံးများကို အဓိပ္ပါယ်ရှိသောအဂ်လိပ်စကားလုံးများအဖြစ်ပြန်စီရေးသားရမည်ဖြစ်ပါသည်။
+                            အဓိပ္ပါယ် ရှိသောစကားလုံးများအတွက် အရိက်အမြွက်ပေးထားပါမည်။
+                            
+                        </li>
+                          
+                      </ul>
+                      <a href="https://thu-zar-hlaing.github.io/wordscamble/" class="btn btn-outline-success">Play Now</a>
+                  </div>
+              </div>
+  
+              <div class="card m-2" style="width: 20rem;height: auto;" >
+                <img src="/assets/memory.png" class="card-img-top" alt="Tic Tac Toe">
+                <div class="card-body">
+                    <h5 class="card-title">Memory Game</h5>
+                    <p class="card-text" style="margin-top: 0px;"><span>ကစားနည်းနှင့် စည်းမျဉ်းမျာ:</span><br>
+                        <ul style="text-align: start;">
+                          <li>ကဒ်နှစ်​စောင်ကို တူညီသောပုံနှစ်ခုဖြစ်အောင် ရွေးချယ်ရမည်။
+                            မတူညီပါက ကဒ်နှစ်စောင်လုံး ပြန်လည်ဖုံးအုပ်သွားမည်ဖြစ်ပါသည်။
+                            </li>
+                            
+                        </ul>
+                      </p>
+                    <a href=" https://thu-zar-hlaing.github.io/memoryGame/" class="btn" style="margin-top:1rem">Play Now</a>
+                </div>
+            </div>
+  
+              <div class="card  m-2" style="width: 20rem;">
+                  <img src="/assets/word.png" class="card-img-top" alt="Memory Game">
+                  <div class="card-body">
+                      <h5 class="card-title">Guess The Word</h5>
+                      <p class="card-text" style="margin-top: 0px;"><span>ကစားနည်းနှင့် စည်းမျဉ်းမျာ:</span><br>
+                        <ul style="text-align: start;">
+                          <li>ပေးထားသော အရိက်အမြွက်ကို အသုံးပြု၍ စာလုံးများကိုခန့်မှန်းပြီး လေးထောင့်ကွက်လေးများတွင်ဖြည့်ရမည်။
+                            ခန့်မှန်းစာလုံးမှားခွင့်ရှိသော အရေအတွက်မှာ (၈) ကြိမ်သာဖြစ်ပါသည်။
+                          </li>
+                            
+                        </ul>    
+                      <a href="https://thu-zar-hlaing.github.io/wordpuzzle/" class="btn  " style="margin-top: 2rem;">Play Now</a>
+                  </div>
+              </div>
+        </div>
+
+        <div class="row ">
+            <div class="card"  id="lastrow" style="width: 20rem;margin-left: 12.3%;margin-top: 0.5rem;">
+                <img src="/assets/rock-paper-scissors.png" class="card-img-top" alt="Tic Tac Toe">
+                <div class="card-body">
+                    <h3 class="card-title">Rock Paper Sciccors</h3>
+                    <p class="card-text" style="margin-top: 0px;"><span>ကစားနည်းနှင့် စည်းမျဉ်းမျာ:</span><br>
+                      <ul style="text-align: start;">
+                        <li>ကစားသူသည် ကွန်ပျူတာနှင့်အတူ တစ်ချိန်တည်း "Rock," "Paper," သို့မဟုတ် "Scissors" ကို ရွေးချယ်ရမည်။</li>
+                      </ul>
+                    </p>
+                    <a href=" https://thu-zar-hlaing.github.io/rockPaperScissor/" class="btn" style="margin-top: 0rem;">Play Now</a>
+                </div>
+            
+         </div>
+    </div>
+
+    <!-- Optional: Bootstrap JavaScript Bundle (for Bootstrap features like modals, tooltips, etc.) -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function(event) {
+            var title = document.getElementById('title');
+            var photo = document.getElementById('photo');
+
+            setTimeout(function() {
+                title.style.opacity = 1;
+                title.style.transform = 'translateY(0)';
+            }, 500); // Adjust delay as needed
+
+            setTimeout(function() {
+                photo.style.opacity = 1;
+                photo.style.transform = 'translateY(0)';
+            }, 1000); // Adjust delay as needed
+        });
+    </script>
+</body>
+</html>
